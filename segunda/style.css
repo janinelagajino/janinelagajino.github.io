@@ -1,0 +1,83 @@
+*{ padding: 0; 
+   margin: 0;}
+
+body{ background: url('68418321-the-best-wallpapers.jpg') no-repeat;
+      background-size: cover; 
+      font-family: Arial; 
+      color: white;}
+
+#main{ display: grid;
+       grid-template-rows: 15vh 10vh 100vh 10vh;
+       grid-template-areas: "header header" "nav nav" "content aside" "footer footer";}
+
+.mainHeader{  grid-area: header; background-color: black; opacity: .8;}
+.mainNav{     grid-area: nav; padding-top: 10px;}
+.mainContent{ grid-area: content;}
+.mainAside{   grid-area: aside;}
+.mainFooter{  grid-area: footer;}
+
+/* Header */
+ul{ margin: 0; 
+    padding: 0; 
+    list-style: none;}
+
+ul li{ float: left; 
+    width: 200px; 
+    height: 40px; 
+    background-color: rgb(8, 56, 214); 
+    opacity: .8; 
+    line-height: 40px; 
+    text-align: center; 
+    font-size: 20px; 
+    margin-right: 22px;
+    margin-left: 40px;}
+
+ul li a{ text-decoration: none; 
+         color: white; 
+         display: block;}
+
+ul li a:hover{ background-color: black;}
+
+ul li ul li{ display: none;}
+
+ul li:hover ul li{ display: block;}
+
+#logo{ margin: 25px;}
+
+/* Boxex */
+.container{ width: 80%; 
+            margin: auto; 
+            overflow: hidden;}
+
+#boxes{ margin-top: 20px;}
+
+#boxes .box{ float: left; 
+             width: 30%; 
+             padding: 5px; 
+             text-align: center;}
+
+#boxes .box img{ width: 90px; height: 90px;}
+
+footer{ padding: 20px; 
+        color: #fff; 
+        background: blue; 
+        opacity: .8; 
+        text-align: center;}
+
+/* Content Slides */
+.mySlides {
+    display:none; 
+    width: 100%; 
+    height: 95vh;
+    padding-left: 60px;
+}
+
+.content p{
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+header .content{
+    float: right;
+
+}
